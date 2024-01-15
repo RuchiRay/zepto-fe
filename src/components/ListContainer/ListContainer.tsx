@@ -15,7 +15,7 @@ export const ListContainer = ({
   orignalData,
 }: ListContainerProps) => {
   return (
-    <div className="bg-white shadow-2xl max-h-[580px] overflow-auto w-max">
+    <div className="bg-white absolute top-12 shadow-2xl max-h-[580px] overflow-auto w-max">
       {data.map((item) => {
         return (
           <ListItem

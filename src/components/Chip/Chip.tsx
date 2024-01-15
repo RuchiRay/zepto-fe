@@ -28,7 +28,7 @@ export const Chip = ({
       <div className="w-8 h-8 rounded-full">
         <img src={img} alt="" className="rounded-full" />
       </div>
-      <p className="text-black/60">{name}</p>
+      <p className="text-black/60 text-nowrap">{name}</p>
       <button
         onClick={removeChip}
         className="flex items-center justify-center text-xl mt-[3px]"

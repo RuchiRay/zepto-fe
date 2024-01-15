@@ -27,7 +27,7 @@ export const Input = () => {
   return (
     <div className="p-4">
       <div className="flex ">
-        <div className="border-b-4 flex gap-1 h-max py-1 border-solid border-blue-400">
+        <div className="border-b-4 flex flex-wrap gap-2 h-max  border-solid border-blue-400">
           {chips.map((item) => {
             return (
               <Chip
@@ -42,24 +42,24 @@ export const Input = () => {
               />
             );
           })}
-        </div>
-
-        <div className="flex  flex-col">
-          <input
-            type="text"
-            className="w-full border-b-4 py-2 border-solid border-blue-400 focus:ring-0  focus-visible:outline-none"
-            value={value}
-            onChange={(e) => handleChange(e.target.value)}
-            onFocus={() => handleFocus()}
-          />
-          {showList && (
-            <ListContainer
-              setChips={setChips}
-              setOrignalData={setOrignalData}
-              data={matchingData}
-              orignalData={orignalData}
+          <div className="flex relative  flex-col">
+            <input
+              type="text"
+              className="pl-2 w-[429px] border-b py-2 border-solid border-blue-400 focus:ring-0  focus-visible:outline-none"
+              value={value}
+              onChange={(e) => handleChange(e.target.value)}
+              onFocus={() => handleFocus()}
+              placeholder="Search"
             />
-          )}
+            {showList && (
+              <ListContainer
+                setChips={setChips}
+                setOrignalData={setOrignalData}
+                data={matchingData}
+                orignalData={orignalData}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
