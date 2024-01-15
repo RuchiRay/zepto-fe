@@ -1,194 +1,194 @@
 [
   {
     "id": "1",
-    "name": "John Doe",
-    "mail": "john.doe@example.com",
+    "name": "Arjun Sharma",
+    "mail": "arjun.sharma@example.com",
     "img": "https://source.unsplash.com/random/640x480"
   },
   {
     "id": "2",
-    "name": "Jane Smith",
-    "mail": "jane.smith@example.com",
+    "name": "Aishwarya Patel",
+    "mail": "aishwarya.patel@example.com",
     "img": "https://source.unsplash.com/random/640x481"
   },
   {
     "id": "3",
-    "name": "Bob Johnson",
-    "mail": "bob.johnson@example.com",
+    "name": "Rahul Kumar",
+    "mail": "rahul.kumar@example.com",
     "img": "https://source.unsplash.com/random/640x482"
   },
   {
     "id": "4",
-    "name": "Alice Williams",
-    "mail": "alice.williams@example.com",
+    "name": "Neha Verma",
+    "mail": "neha.verma@example.com",
     "img": "https://source.unsplash.com/random/640x483"
   },
   {
     "id": "5",
-    "name": "Charlie Brown",
-    "mail": "charlie.brown@example.com",
+    "name": "Priya Singh",
+    "mail": "priya.singh@example.com",
     "img": "https://source.unsplash.com/random/640x484"
   },
   {
     "id": "6",
-    "name": "Eva Davis",
-    "mail": "eva.davis@example.com",
+    "name": "Vikram Yadav",
+    "mail": "vikram.yadav@example.com",
     "img": "https://source.unsplash.com/random/640x485"
   },
   {
     "id": "7",
-    "name": "David Miller",
-    "mail": "david.miller@example.com",
+    "name": "Sanya Gupta",
+    "mail": "sanya.gupta@example.com",
     "img": "https://source.unsplash.com/random/640x486"
   },
   {
     "id": "8",
-    "name": "Grace Taylor",
-    "mail": "grace.taylor@example.com",
+    "name": "Rajesh Tiwari",
+    "mail": "rajesh.tiwari@example.com",
     "img": "https://source.unsplash.com/random/640x487"
   },
   {
     "id": "9",
-    "name": "Henry Martinez",
-    "mail": "henry.martinez@example.com",
+    "name": "Meera Kapoor",
+    "mail": "meera.kapoor@example.com",
     "img": "https://source.unsplash.com/random/640x488"
   },
   {
     "id": "10",
-    "name": "Olivia Wilson",
-    "mail": "olivia.wilson@example.com",
+    "name": "Aryan Joshi",
+    "mail": "aryan.joshi@example.com",
     "img": "https://source.unsplash.com/random/640x489"
   },
   {
     "id": "11",
-    "name": "Samuel Anderson",
-    "mail": "samuel.anderson@example.com",
+    "name": "Ananya Gupta",
+    "mail": "ananya.gupta@example.com",
     "img": "https://source.unsplash.com/random/640x490"
   },
   {
     "id": "12",
-    "name": "Lily Thomas",
-    "mail": "lily.thomas@example.com",
+    "name": "Rohan Verma",
+    "mail": "rohan.verma@example.com",
     "img": "https://source.unsplash.com/random/640x491"
   },
   {
     "id": "13",
-    "name": "Michael White",
-    "mail": "michael.white@example.com",
+    "name": "Shreya Reddy",
+    "mail": "shreya.reddy@example.com",
     "img": "https://source.unsplash.com/random/640x492"
   },
   {
     "id": "14",
-    "name": "Sophia Harris",
-    "mail": "sophia.harris@example.com",
+    "name": "Aditya Kumar",
+    "mail": "aditya.kumar@example.com",
     "img": "https://source.unsplash.com/random/640x493"
   },
   {
     "id": "15",
-    "name": "Daniel Lee",
-    "mail": "daniel.lee@example.com",
+    "name": "Kavya Sharma",
+    "mail": "kavya.sharma@example.com",
     "img": "https://source.unsplash.com/random/640x494"
   },
   {
     "id": "16",
-    "name": "Emma Moore",
-    "mail": "emma.moore@example.com",
+    "name": "Rahul Bose",
+    "mail": "rahul.bose@example.com",
     "img": "https://source.unsplash.com/random/640x495"
   },
   {
     "id": "17",
-    "name": "William Davis",
-    "mail": "william.davis@example.com",
+    "name": "Aarav Verma",
+    "mail": "aarav.verma@example.com",
     "img": "https://source.unsplash.com/random/640x496"
   },
   {
     "id": "18",
-    "name": "Sophie Brown",
-    "mail": "sophie.brown@example.com",
+    "name": "Ishaan Patel",
+    "mail": "ishaan.patel@example.com",
     "img": "https://source.unsplash.com/random/640x497"
   },
   {
     "id": "19",
-    "name": "Andrew Johnson",
-    "mail": "andrew.johnson@example.com",
+    "name": "Aditi Desai",
+    "mail": "aditi.desai@example.com",
     "img": "https://source.unsplash.com/random/640x498"
   },
   {
     "id": "20",
-    "name": "Mia Wilson",
-    "mail": "mia.wilson@example.com",
+    "name": "Riya Choudhury",
+    "mail": "riya.choudhury@example.com",
     "img": "https://source.unsplash.com/random/640x499"
   },
   {
     "id": "21",
-    "name": "James Miller",
-    "mail": "james.miller@example.com",
+    "name": "Kunal Sharma",
+    "mail": "kunal.sharma@example.com",
     "img": "https://source.unsplash.com/random/640x500"
   },
   {
     "id": "22",
-    "name": "Ava Martinez",
-    "mail": "ava.martinez@example.com",
+    "name": "Aisha Singh",
+    "mail": "aisha.singh@example.com",
     "img": "https://source.unsplash.com/random/640x501"
   },
   {
     "id": "23",
-    "name": "Logan Smith",
-    "mail": "logan.smith@example.com",
+    "name": "Avni Agarwal",
+    "mail": "avni.agarwal@example.com",
     "img": "https://source.unsplash.com/random/640x502"
   },
   {
     "id": "24",
-    "name": "Chloe Anderson",
-    "mail": "chloe.anderson@example.com",
+    "name": "Vihaan Joshi",
+    "mail": "vihaan.joshi@example.com",
     "img": "https://source.unsplash.com/random/640x503"
   },
   {
     "id": "25",
-    "name": "Isaac Taylor",
-    "mail": "isaac.taylor@example.com",
+    "name": "Aradhya Tiwari",
+    "mail": "aradhya.tiwari@example.com",
     "img": "https://source.unsplash.com/random/640x504"
   },
   {
     "id": "26",
-    "name": "Emily White",
-    "mail": "emily.white@example.com",
+    "name": "Advait Reddy",
+    "mail": "advait.reddy@example.com",
     "img": "https://source.unsplash.com/random/640x505"
   },
   {
     "id": "27",
-    "name": "Noah Davis",
-    "mail": "noah.davis@example.com",
+    "name": "Ishita Kumar",
+    "mail": "ishita.kumar@example.com",
     "img": "https://source.unsplash.com/random/640x506"
   },
   {
     "id": "28",
-    "name": "Zoe Thomas",
-    "mail": "zoe.thomas@example.com",
+    "name": "Arnav Thomas",
+    "mail": "arnav.thomas@example.com",
     "img": "https://source.unsplash.com/random/640x507"
   },
   {
     "id": "29",
-    "name": "Lucas Harris",
-    "mail": "lucas.harris@example.com",
+    "name": "Tanvi Harris",
+    "mail": "tanvi.harris@example.com",
     "img": "https://source.unsplash.com/random/640x508"
   },
   {
     "id": "30",
-    "name": "Grace Brown",
-    "mail": "grace.brown@example.com",
+    "name": "Aryan Brown",
+    "mail": "aryan.brown@example.com",
     "img": "https://source.unsplash.com/random/640x509"
   },
   {
     "id": "31",
-    "name": "Jackson Moore",
-    "mail": "jackson.moore@example.com",
+    "name": "Amara Moore",
+    "mail": "amara.moore@example.com",
     "img": "https://source.unsplash.com/random/640x510"
   },
   {
     "id": "32",
-    "name": "Aria Lee",
-    "mail": "aria.lee@example.com",
+    "name": "Aarav Lee",
+    "mail": "aarav.lee@example.com",
     "img": "https://source.unsplash.com/random/640x511"
   }
 ]

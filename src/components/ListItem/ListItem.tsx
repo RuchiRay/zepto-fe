@@ -1,14 +1,33 @@
 import React from "react";
 import { ListItemType } from "./type";
-
-export const ListItem = ({ data }: ListItemType) => {
+import data from "../../data/data.json";
+interface ListItemProps extends ListItemType {
+  setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+  setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+}
+export const ListItem = ({
+  id,
+  name,
+  mail,
+  img,
+  setChips,
+  setOrignalData,
+}: ListItemProps) => {
+  const handleClick = () => {
+    setChips((prev) => [...prev, { id, name, mail, img }]);
+    const newData = data.filter((item) => item.id !== id);
+    setOrignalData(newData);
+  };
   return (
-    <div className="flex gap-3 items-center py-1 px-2">
+    <div
+      onClick={handleClick}
+      className="flex gap-3 items-center py-2 cursor-pointer hover:bg-black/5 px-3"
+    >
       <div className="w-12 h-12 rounded-full">
-        <img src={data.img} alt="" className="rounded-full" />
+        <img src={img} alt="" className="rounded-full" />
       </div>
-      <p>{data.name}</p>
-      <p className="text-gray-400">{data.mail}</p>
+      <p>{name}</p>
+      <p className="text-gray-400">{mail}</p>
     </div>
   );
 };
