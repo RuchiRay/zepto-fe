@@ -38,6 +38,7 @@ export const Input = () => {
                 id={item.id}
                 setChips={setChips}
                 setOrignalData={setOrignalData}
+                orignalData={orignalData}
               />
             );
           })}
@@ -56,6 +57,7 @@ export const Input = () => {
               setChips={setChips}
               setOrignalData={setOrignalData}
               data={matchingData}
+              orignalData={orignalData}
             />
           )}
         </div>

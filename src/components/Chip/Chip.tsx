@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 interface ChipProps extends ListItemType {
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+  orignalData: ListItemType[];
 }
 
 export const Chip = ({
@@ -14,6 +15,7 @@ export const Chip = ({
   img,
   setChips,
   setOrignalData,
+  orignalData,
 }: ChipProps) => {
   const removeChip = () => {
     setChips((prev) => {

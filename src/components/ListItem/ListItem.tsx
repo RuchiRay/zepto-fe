@@ -4,6 +4,7 @@ import data from "../../data/data.json";
 interface ListItemProps extends ListItemType {
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+  orignalData: ListItemType[];
 }
 export const ListItem = ({
   id,
@@ -12,10 +13,11 @@ export const ListItem = ({
   img,
   setChips,
   setOrignalData,
+  orignalData,
 }: ListItemProps) => {
   const handleClick = () => {
     setChips((prev) => [...prev, { id, name, mail, img }]);
-    const newData = data.filter((item) => item.id !== id);
+    const newData = orignalData.filter((item) => item.id !== id);
     setOrignalData(newData);
   };
   return (

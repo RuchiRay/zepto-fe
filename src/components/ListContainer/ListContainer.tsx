@@ -6,11 +6,13 @@ interface ListContainerProps {
   data: ListItemType[];
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+  orignalData: ListItemType[];
 }
 export const ListContainer = ({
   data,
   setChips,
   setOrignalData,
+  orignalData,
 }: ListContainerProps) => {
   return (
     <div className="bg-white shadow-2xl max-h-[580px] overflow-auto w-max">
@@ -24,6 +26,7 @@ export const ListContainer = ({
             img={item.img}
             setChips={setChips}
             setOrignalData={setOrignalData}
+            orignalData={orignalData}
           />
         );
       })}
