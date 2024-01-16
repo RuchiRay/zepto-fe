@@ -9,8 +9,10 @@ export const Input = () => {
   const [orignalData, setOrignalData] = useState(data);
   const [matchingData, setMatchingData] = useState(data);
   const [chips, setChips] = useState<ListItemType[]>([]);
+  const [highlight, setHighlight] = useState(false);
   const handleChange = (value: string) => {
     setValue(value);
+    setHighlight(false);
   };
   useEffect(() => {
     const newData = orignalData.filter((item) => {
@@ -22,13 +24,24 @@ export const Input = () => {
   const handleFocus = () => {
     setshowList(true);
   };
-  console.log(chips);
+
+  const handleBackspace = (e: any) => {
+    if (e.key === "Backspace" || e.keyCode === 8) {
+      if (value.length === 0) {
+        setHighlight(true);
+      }
+      if (highlight) {
+        const newData = chips.slice(0, -1);
+        setChips(newData);
+      }
+    }
+  };
 
   return (
     <div className="p-4">
       <div className="flex ">
         <div className="border-b-4 flex flex-wrap gap-2 h-max  border-solid border-blue-400">
-          {chips.map((item) => {
+          {chips.map((item, index) => {
             return (
               <Chip
                 key={item.id}
@@ -39,17 +52,19 @@ export const Input = () => {
                 setChips={setChips}
                 setOrignalData={setOrignalData}
                 orignalData={orignalData}
+                highlight={index === chips.length - 1 && highlight}
               />
             );
           })}
           <div className="flex relative  flex-col">
             <input
               type="text"
-              className="pl-2 w-[429px] border-b py-2 border-solid border-blue-400 focus:ring-0  focus-visible:outline-none"
+              className="pl-2 w-[429px]  py-2 border-solid border-blue-400 focus:ring-0  focus-visible:outline-none"
               value={value}
               onChange={(e) => handleChange(e.target.value)}
               onFocus={() => handleFocus()}
               placeholder="Search"
+              onKeyDown={handleBackspace}
             />
             {showList && (
               <ListContainer
@@ -57,6 +72,7 @@ export const Input = () => {
                 setOrignalData={setOrignalData}
                 data={matchingData}
                 orignalData={orignalData}
+                setHighlight={setHighlight}
               />
             )}
           </div>

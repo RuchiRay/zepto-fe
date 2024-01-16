@@ -6,6 +6,7 @@ interface ChipProps extends ListItemType {
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   orignalData: ListItemType[];
+  highlight?: boolean;
 }
 
 export const Chip = ({
@@ -16,6 +17,7 @@ export const Chip = ({
   setChips,
   setOrignalData,
   orignalData,
+  highlight,
 }: ChipProps) => {
   const removeChip = () => {
     setChips((prev) => {
@@ -24,7 +26,11 @@ export const Chip = ({
     setOrignalData((prev) => [...prev, { id, name, mail, img }]);
   };
   return (
-    <div className="flex h-max items-center gap-1 rounded-2xl bg-black/10 pr-1">
+    <div
+      className={`${
+        highlight ? `bg-black/30` : `bg-black/10`
+      } flex h-max items-center gap-1 rounded-2xl pr-1`}
+    >
       <div className="w-8 h-8 rounded-full">
         <img src={img} alt="" className="rounded-full" />
       </div>

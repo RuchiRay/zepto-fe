@@ -1,10 +1,10 @@
 import React from "react";
 import { ListItemType } from "./type";
-import data from "../../data/data.json";
 interface ListItemProps extends ListItemType {
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   orignalData: ListItemType[];
+  setHighlight: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const ListItem = ({
   id,
@@ -14,11 +14,13 @@ export const ListItem = ({
   setChips,
   setOrignalData,
   orignalData,
+  setHighlight,
 }: ListItemProps) => {
   const handleClick = () => {
     setChips((prev) => [...prev, { id, name, mail, img }]);
     const newData = orignalData.filter((item) => item.id !== id);
     setOrignalData(newData);
+    setHighlight(false);
   };
   return (
     <div

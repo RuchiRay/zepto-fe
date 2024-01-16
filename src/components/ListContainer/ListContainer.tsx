@@ -7,12 +7,14 @@ interface ListContainerProps {
   setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
   orignalData: ListItemType[];
+  setHighlight: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const ListContainer = ({
   data,
   setChips,
   setOrignalData,
   orignalData,
+  setHighlight,
 }: ListContainerProps) => {
   return (
     <div className="bg-white absolute top-12 shadow-2xl max-h-[580px] overflow-auto w-max">
@@ -27,6 +29,7 @@ export const ListContainer = ({
             setChips={setChips}
             setOrignalData={setOrignalData}
             orignalData={orignalData}
+            setHighlight={setHighlight}
           />
         );
       })}
