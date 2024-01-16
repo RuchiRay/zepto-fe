@@ -25,7 +25,7 @@ export const ListItem = ({
   return (
     <div
       onClick={handleClick}
-      className="flex gap-3 items-center py-2 cursor-pointer hover:bg-black/5 px-3"
+      className="flex gap-3 flex-wrap items-center py-2 cursor-pointer hover:bg-black/5 px-3"
     >
       <div className="w-12 h-12 rounded-full">
         <img src={img} alt="" className="rounded-full" />

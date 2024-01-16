@@ -17,7 +17,7 @@ export const ListContainer = ({
   setHighlight,
 }: ListContainerProps) => {
   return (
-    <div className="bg-white absolute top-12 shadow-2xl max-h-[580px] overflow-auto w-max">
+    <div className="bg-white absolute top-12 shadow-2xl max-h-[580px] overflow-y-auto sm:w-max">
       {data.map((item) => {
         return (
           <ListItem
