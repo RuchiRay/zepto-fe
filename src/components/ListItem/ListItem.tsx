@@ -1,8 +1,8 @@
 import React from "react";
-import { ListItemType } from "./type";
+import { ListItemType, StateDispatch } from "./type";
 interface ListItemProps extends ListItemType {
-  setChips: React.Dispatch<React.SetStateAction<ListItemType[]>>;
-  setOrignalData: React.Dispatch<React.SetStateAction<ListItemType[]>>;
+  setChips: StateDispatch;
+  setOrignalData: StateDispatch;
   orignalData: ListItemType[];
   setHighlight: React.Dispatch<React.SetStateAction<boolean>>;
 }
