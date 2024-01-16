@@ -51,7 +51,6 @@ export const Input = () => {
                 id={item.id}
                 setChips={setChips}
                 setOrignalData={setOrignalData}
-                orignalData={orignalData}
                 highlight={index === chips.length - 1 && highlight}
               />
             );
